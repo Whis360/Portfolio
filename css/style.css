@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    align-items: center;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 0px 0px 0px 750px;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+
+}
+
+.links:hover {
+    transition: 0.2s;
+    color: #800080;
+    border-bottom: 2px solid #800080;
+}
+
+.bon {
+    margin-left: 150px;
+}
+
+
+/* HEADER */
+
+header {
+    padding: 210px 0px 0px 150px;
+    background-color: #F9F9FF;
+    /* background: linear-gradient(to left,#64BAFC, white); */
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+#now {
+    text-decoration: none;
+    font-family: Roboto Condensed;
+    /* border: 2px solid #800080; */
+    background: linear-gradient(to right,#800080,#64BAFC);
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.n2 {
+    color: white;
+    text-decoration: none;
+}
+
+.intro p {
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.intro h1 {
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic);
+    font-family: Roboto Condensed;
+    font-size: 60px;
+    font-weight: 500;
+
+}
+
+.web-text {
+    font-family: Poppins;
+    padding: 20px 0px 0px 0px;
+    color: gray;
+    font-size: 15px;
+}
+
+#g2 {
+    padding: 0px 0px 0px 60px;
+}
+
+/* SECTION 1 */
+
+/* #one {
+    background-color: lightblue;
+} */
+
+
+.offer {
+    font-family: Poppins;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 50px;
+    color: #222222;
+}
+
+#services {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2em;
+    justify-content: space-evenly;
+    padding: 50px 50px 90px 60px;
+    font-family: Poppins;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+#services, ion-icon {
+    zoom: 120%;
+    position: relative;
+}
+
+.s1, .s2, .s3 {
+    align-items: center;  
+    text-align: center;
+    zoom: 120%;
+    padding: 45px 20px 0px 20px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    /* border: 2px solid gray; */
+    width: 300px;
+    height: 200px;
+}
+
+.s1:hover, .s2:hover, .s3:hover {
+    /* opacity: 0.9; */
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #7068C5;
+    border: none;
+}
+
+.w-text {
+    padding-top: 10px;
+    font-size: 10px;
+    font-weight: 450;
+}
+
+.s-text {
+    color: gray;
+    font-size: 17px;
+    font-family: Poppins;
+    text-align: center;
+}
+
+/* .f-under {
+    width: 400px;
+} */
+
+
+
+/* @media {} */
