@@ -205,6 +205,21 @@ header {
     width: 400px;
 } */
 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+    and (max-device-width: 1024px) {
+    
+}
 
 
-/* @media {} */
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+        
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+    and (orientation: landscape) {
+                                              
+}
