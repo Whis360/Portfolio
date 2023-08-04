@@ -48,8 +48,6 @@ header {
     /* background: linear-gradient(to left,#64BAFC, white); */
     display: flex;
     flex-direction: row;
-    
-
 }
 
 #now {
@@ -123,7 +121,7 @@ header {
     position: relative;
 }
 
-.s1, .s2, .s3 {
+.s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9 {
     align-items: center;  
     text-align: center;
     zoom: 120%;
@@ -136,10 +134,57 @@ header {
     height: 200px;
 }
 
-.s1:hover, .s2:hover, .s3:hover {
-    /* opacity: 0.9; */
+.s1:hover {
     transition: 0.5.s;
-    box-shadow: 2px 2px 2px 2px #7068C5;
+    box-shadow: 2px 2px 2px 2px #ff8e24;
+    border: none;
+}
+
+.s2:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #4eb927;
+    border: none;
+}
+
+.s3:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #61dbfb;
+    border: none;
+}
+
+.s4:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #e34c26;
+    border: none;
+}
+
+.s5:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #264de4;
+    border: none;
+}
+
+.s6:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #563d7c;
+    border: none;
+}
+
+.s7:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #ffd43b;
+    border: none;
+}
+
+.s8:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #800080;
+    border: none;
+}
+
+.s9:hover {
+    transition: 0.5.s;
+    box-shadow: 2px 2px 2px 2px #61dbfb;
     border: none;
 }
 
