@@ -110,7 +110,7 @@ header {
     grid-template-columns: auto auto auto;
     gap: 2em;
     justify-content: space-evenly;
-    padding: 50px 50px 90px 60px;
+    padding: 100px 50px 100px 60px;
     font-family: Poppins;
     font-weight: 600;
     letter-spacing: -0.5px;
