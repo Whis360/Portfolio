@@ -255,32 +255,39 @@ header {
             zoom: 100%;
         }
         
-        /* NAVIGATION BAR */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            span {
+                height: 3px;
+                width: 25px;
+                background-color: #333;
+                margin: 2px;
+            }
+        }
+
         nav {
             align-items: center;
             height: 60px;
             display: flex;
-            flex-direction: row;
+            justify-content: space-between;
             background-color: #F9F9FF;
-            /* position: sticky;
-            width: 1600px; */
+            padding: 0 20px; /* Adjusted for mobile view */
         }
         
         #menu {
-            display: flex;
-            flex-direction: row;
-            gap: 1em; /* Adjusted for mobile view */
-            padding: 0px 20px; /* Adjusted for mobile view */
+            display: none; /* Hide menu in default view */
         }
         
         .links {
             color: black;
             text-decoration: none;
-            /* @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic); */
             font-family: 'Poppins', sans-serif;
             font-size: 12px;
             font-weight: 500;
             letter-spacing: 0.1px;
+            margin: 0 15px; /* Adjusted for mobile view */
         }
         
         .links:hover {
@@ -288,6 +295,7 @@ header {
             color: #800080;
             border-bottom: 2px solid #800080;
         }
+
         
         .bon {
             margin-left: 15px; /* Adjusted for mobile view */
