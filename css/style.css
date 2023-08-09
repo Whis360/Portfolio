@@ -4,16 +4,24 @@
     box-sizing: border-box;
 }
 
+html {
+    zoom: 92%;
+}
+/* NAVIGATION BAR */
 nav {
     align-items: center;
     height: 60px;
     display: flex;
     flex-direction: row;
+    background-color: #F9F9FF;
+    /* position: sticky;
+    width: 1600px; */   
 }
 
 #menu {
     display: flex;
     flex-direction: row;
+
     gap: 2em;
     padding: 0px 0px 0px 750px;
 }
