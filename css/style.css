@@ -276,9 +276,9 @@ header {
             padding: 0 20px; /* Adjusted for mobile view */
         }
         
-        #menu {
-            display: none; /* Hide menu in default view */
-        }
+        /* #menu {
+            display: none; /* Hide menu in default view 
+        } */
         
         .links {
             color: black;
