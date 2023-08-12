@@ -274,8 +274,8 @@ header {
       margin: 10px auto;
     }
 
-    .profile {
-        zoom: 90%;
+    #g2 {
+        display: none;
     }
   
     /* SECTION 1 */
