@@ -273,6 +273,10 @@ header {
       width: auto;
       margin: 10px auto;
     }
+
+    .profile {
+        zoom: 90%;
+    }
   
     /* SECTION 1 */
     #services {
