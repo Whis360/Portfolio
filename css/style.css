@@ -215,7 +215,7 @@ header {
 
 
 
-
+    
 
 
 
@@ -249,55 +249,7 @@ header {
 
 /* Mobile Portrait Styles */
 @media (max-width: 767px) {
-    /* NAVIGATION BAR */
-    nav {
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-  
-    #menu {
-      flex-direction: column;
-      padding: 10px;
-    }
-  
-    /* HEADER */
-    header {
-      padding: 50px 20px;
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    #now {
-      width: auto;
-      margin: 10px auto;
-    }
-
-    #g2 {
-        display: none;
-    }
-  
-    /* SECTION 1 */
-    #services {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      padding: 50px 20px;
-    }
-  
-    .s1,
-    .s2,
-    .s3,
-    .s4,
-    .s5,
-    .s6,
-    .s7,
-    .s8,
-    .s9 {
-      width: 100%;
-      height: auto;
-      padding: 20px;
-      margin: 10px 0;
-    }
+    
 }
   
 
