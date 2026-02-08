@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg: #F9F9FF;
+    --accent-start: #800080;
+    --accent-end: #64BAFC;
+    --text: #1a1a1a;
+    --muted: #666666;
+    --card-border: #e8e8e8;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
 /* html {
     zoom: 93%;
 } */
@@ -69,11 +79,11 @@ nav {
 /* HEADER */
 
 header {
-    padding: 210px 0px 0px 150px;
-    background-color: #F9F9FF;
-    /* background: linear-gradient(to left,#64BAFC, white); */
+    padding: 120px 0 0 120px;
+    background-color: var(--bg);
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #now {
@@ -99,8 +109,9 @@ header {
 
 .intro h1 {
     font-family: Roboto Condensed;
-    font-size: 60px;
+    font-size: clamp(28px, 5vw, 60px);
     font-weight: 500;
+    line-height: 1.02;
 }
 
 .web-text {
@@ -123,19 +134,19 @@ header {
 
 .offer {
     font-family: Poppins;
-    font-size: 42px;
+    font-size: clamp(28px, 4vw, 42px);
     text-align: center;
     padding-top: 60px;
     padding-bottom: 20px;
-    color: #1a1a1a;
+    color: var(--text);
     font-weight: 700;
     letter-spacing: -0.5px;
 }
 
 #services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5em;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
     justify-content: center;
     padding: 60px 80px 100px 80px;
     font-family: Poppins;
@@ -154,12 +165,12 @@ header {
     justify-content: flex-start;
     text-align: center;
     padding: 50px 25px 30px 25px;
-    border-radius: 16px;
-    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    border: 1px solid var(--card-border);
     background: #FFFFFF;
-    min-height: 280px;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    min-height: 260px;
+    transition: transform .36s cubic-bezier(.22,1,.36,1), box-shadow .36s ease;
+    box-shadow: var(--card-shadow);
 }
 
 .s1:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(255, 142, 36, 0.25); border: 1px solid #ff8e24; }
@@ -178,8 +189,8 @@ header {
 }
 
 .s1 > i, .s2 > i, .s3 > i, .s4 > i, .s5 > i, .s6 > i, .s7 > i, .s8 > i, .s9 > i {
-    font-size: 2.5em !important;
-    margin-bottom: 15px;
+    font-size: 2.4em !important;
+    margin-bottom: 14px;
 }
 
 .s1 > p:nth-of-type(1), .s2 > p:nth-of-type(1), .s3 > p:nth-of-type(1), .s4 > p:nth-of-type(1), .s5 > p:nth-of-type(1), .s6 > p:nth-of-type(1), .s7 > p:nth-of-type(1), .s8 > p:nth-of-type(1), .s9 > p:nth-of-type(1) {
@@ -213,126 +224,58 @@ header {
 
 /* RESPONSIVE DESIGN */
 
-/* Tablet View */
-@media screen and (max-width: 1024px) {
-    nav {
-        padding: 0 30px;
-    }
-    
-    #menu {
-        gap: 2.5em;
-    }
-    
-    .links {
-        font-size: 12px;
-    }
-    
-    header {
-        padding: 150px 0px 0px 100px;
-    }
-    
-    #g2 {
-        padding: 0px 0px 0px 40px;
-    }
-    
-    #g2 img {
-        height: 400px;
-        width: 400px;
-    }
-    
-    #services {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        padding: 50px 40px 80px 40px;
-    }
-    
-    .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9 {
-        padding: 40px 20px 25px 20px;
-        min-height: 260px;
-    }
-    
-    .s-text {
-        padding: 0 40px 20px 40px;
-        font-size: 14px;
-    }
+/* Projects area small adjustments */
+#projects { padding: 100px 80px; background: #fff; text-align: center; }
+
+/* Large screens */
+@media (min-width: 1300px) {
+    header { padding: 120px 120px 0 120px; }
+    #services { grid-template-columns: repeat(3, 1fr); padding: 80px 120px; }
 }
 
-/* Mobile View */
-@media (max-width: 768px) {
-    nav {
-        height: auto;
-        flex-wrap: wrap;
-        padding: 15px 20px;
-    }
-    
-    #menu {
-        width: 100%;
-        flex-direction: column;
-        gap: 15px;
-        margin-left: 0;
-        margin-top: 15px;
-    }
-    
-    .links {
-        font-size: 12px;
-        padding: 8px 0;
-    }
-    
-    .bon {
-        margin: 0;
-    }
-    
-    header {
-        flex-direction: column;
-        padding: 50px 20px 0px 20px;
-        align-items: center;
-    }
-    
-    #g1 {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .intro h1 {
-        font-size: 40px;
-    }
-    
-    .web-text {
-        font-size: 14px;
-    }
-    
-    #g2 {
-        padding: 30px 0px 0px 0px;
-    }
-    
-    #g2 img {
-        height: 300px !important;
-        width: 300px !important;
-    }
-    
-    .offer {
-        font-size: 32px;
-        padding-top: 40px;
-    }
-    
-    #services {
-        grid-template-columns: 1fr;
-        padding: 40px 20px 60px 20px;
-        gap: 1.5em;
-    }
-    
-    .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9 {
-        padding: 30px 20px;
-        min-height: auto;
-    }
-    
-    .s-text {
-        padding: 0 20px 20px 20px;
-        font-size: 14px;
-    }
-    
-    .w-text {
-        font-size: 12px;
-    }
+/* Desktop / small laptop */
+@media (max-width:1299px) and (min-width:900px) {
+    header { padding: 100px 80px 0 80px; }
+    .intro h1 { font-size: 56px; }
+    #services { grid-template-columns: repeat(3, 1fr); padding: 60px 80px; }
+}
+
+/* Tablet */
+@media (max-width:899px) and (min-width:600px) {
+    nav { padding: 0 28px; }
+    #menu { gap: 2.2em; }
+    .links { font-size: 13px; }
+    header { padding: 60px 40px 20px 40px; flex-direction: column; align-items: center; gap: 18px; }
+    .intro h1 { font-size: 44px; text-align: center; }
+    #g2 { padding: 0; }
+    #g2 img { max-width: 420px; height: auto; }
+    #services { grid-template-columns: repeat(2,1fr); gap: 1.6rem; padding: 50px 40px; }
+    .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9 { padding: 34px 20px; min-height: 300px; }
+}
+
+/* Mobile */
+@media (max-width:599px) {
+    nav { padding: 10px 16px; height: auto; }
+    #menu { width: 100%; flex-direction: column; gap: 12px; margin-left: 0; margin-top: 10px; }
+    .links { font-size: 12px; padding: 6px 0; }
+    .bon { height: 36px; width: 36px; }
+    header { flex-direction: column; padding: 36px 18px 12px 18px; align-items: center; gap: 16px; }
+    .intro h1 { font-size: 32px; text-align: center; }
+    .web-text { font-size: 14px; padding: 0 8px; }
+    #g2 img { width: 260px; height: auto; }
+    .offer { font-size: 28px; }
+    #services { grid-template-columns: 1fr; padding: 30px 16px; gap: 16px; }
+    .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9 { padding: 24px 14px; border-radius: 12px; min-height: auto; }
+    .s1 > i, .s2 > i, .s3 > i, .s4 > i, .s5 > i, .s6 > i, .s7 > i, .s8 > i, .s9 > i { font-size: 2.1em !important; }
+    .w-text { font-size: 13px; }
+}
+
+/* Extra small phones */
+@media (max-width:370px) {
+    .intro h1 { font-size: 26px; }
+    #g2 img { width: 200px; }
+    #services { padding: 22px 12px; }
+    .links { font-size: 11px; }
 }
 
 
