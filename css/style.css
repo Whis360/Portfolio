@@ -195,9 +195,33 @@ header {
     line-height: 1.4;
 }
 
+/* Icon badges — one uniform circular chip per card, tinted with the card's accent */
 .s1 > i, .s2 > i, .s3 > i, .s4 > i, .s5 > i, .s6 > i, .s7 > i, .s8 > i, .s9 > i {
-    font-size: 2.4em !important;
-    margin-bottom: 14px;
+    width: 76px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    font-size: 1.9em !important;
+    margin-bottom: 20px;
+    transition: transform .36s cubic-bezier(.22,1,.36,1);
+}
+
+.s1 > i { background: rgba(255, 142, 36, 0.12); }
+.s2 > i { background: rgba(78, 185, 39, 0.12); }
+.s3 > i { background: rgba(97, 219, 251, 0.16); }
+.s4 > i { background: rgba(227, 76, 38, 0.10); }
+.s5 > i { background: rgba(38, 77, 228, 0.10); }
+.s6 > i { background: rgba(86, 61, 124, 0.12); }
+.s7 > i { background: rgba(255, 212, 59, 0.16); }
+.s8 > i { background: rgba(128, 0, 128, 0.10); }
+.s9 > i { background: rgba(97, 219, 251, 0.16); }
+
+.s1:hover > i, .s2:hover > i, .s3:hover > i, .s4:hover > i, .s5:hover > i,
+.s6:hover > i, .s7:hover > i, .s8:hover > i, .s9:hover > i {
+    transform: translateY(-4px) scale(1.06);
 }
 
 .s1 > p:nth-of-type(1), .s2 > p:nth-of-type(1), .s3 > p:nth-of-type(1), .s4 > p:nth-of-type(1), .s5 > p:nth-of-type(1), .s6 > p:nth-of-type(1), .s7 > p:nth-of-type(1), .s8 > p:nth-of-type(1), .s9 > p:nth-of-type(1) {
@@ -277,7 +301,7 @@ header {
     .offer { font-size: 28px; }
     #services-grid { grid-template-columns: 1fr; padding: 30px 16px; gap: 16px; }
     .s1, .s2, .s3, .s4, .s5, .s6, .s7, .s8, .s9 { padding: 24px 14px; border-radius: 12px; min-height: auto; }
-    .s1 > i, .s2 > i, .s3 > i, .s4 > i, .s5 > i, .s6 > i, .s7 > i, .s8 > i, .s9 > i { font-size: 2.1em !important; }
+    .s1 > i, .s2 > i, .s3 > i, .s4 > i, .s5 > i, .s6 > i, .s7 > i, .s8 > i, .s9 > i { width: 64px; height: 64px; font-size: 1.7em !important; margin-bottom: 16px; }
     .w-text { font-size: 13px; }
 }
 
@@ -422,6 +446,11 @@ header {
     border: 1px solid rgba(128, 0, 128, 0.18);
     padding: 4px 10px;
     border-radius: 999px;
+}
+
+.project-links {
+    display: flex;
+    gap: 22px;
 }
 
 .project-links a {
