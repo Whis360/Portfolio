@@ -4,68 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Wisdom Nwaka — Web Developer</title>
+    <meta name="description" content="Portfolio of Wisdom Nwaka, a web developer building clean, responsive websites and web apps with HTML, CSS, JavaScript and React.">
+    <meta name="theme-color" content="#800080">
+
+    <!-- Social sharing. If you later use a custom domain, update these URLs. -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wisdom Nwaka — Web Developer">
+    <meta property="og:description" content="Clean, responsive websites and web apps built with HTML, CSS, JavaScript and React.">
+    <meta property="og:url" content="https://whis360.github.io/Portfolio/">
+    <meta property="og:image" content="https://whis360.github.io/Portfolio/img/jackson-sophat-_t-l5FFH8VA-unsplash.jpg">
+
+    <link rel="icon" type="image/svg+xml" href="img/bonfire-outline.svg">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg" href="img/bonfire-outline.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
 
 </head>
 
 <body>
-    
+
     <nav>
-        <img class="bon" src="img/bonfire-outline.svg" height="40px" width="40px" alt="Logo">
+        <a href="#home" class="brand">
+            <img class="bon" src="img/bonfire-outline.svg" height="40px" width="40px" alt="Wisdom Nwaka logo">
+        </a>
+
+        <button id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
         <div id="menu">
-            <a href=" " class="links">HOME</a>
-            <a href="#one" class="links">SERVICES</a>
+            <a href="#home" class="links">HOME</a>
+            <a href="#services" class="links">SERVICES</a>
             <a href="#projects" class="links">PROJECTS</a>
-            <a href=" " class="links">CONTACT</a>           
+            <a href="#contact" class="links">CONTACT</a>
         </div>
     </nav>
 
-    <header>
+    <header id="home">
 
         <div id="g1">
             <div class="intro">
                 <p>THIS IS ME,</p>
-    
+
                 <h1>WISDOM NWAKA</h1>
             </div>
-    
+
             <p class="web-text">
-                Your website is the center of your digital eco-system, like a brick and mortar location, 
-                <br>the experience matters once a customer enters, just as much as the perception they have 
-                <br> of you before they walk through the door.
+                Your website is the center of your digital eco-system, like a brick and mortar location,
+                the experience matters once a customer enters, just as much as the perception they have
+                of you before they walk through the door.
             </p>
 
             <div id="now">
-                <a class="n2" href="">HIRE ME</a>
+                <a class="n2" href="#contact">HIRE ME</a>
             </div>
-            
+
         </div>
-        
+
         <div id="g2">
-            <img src="img/undraw_programming_re_kg9v (1).svg" class="profile" height="500px" width="500px" alt="Programming illustration">
+            <img src="img/undraw_programming.svg" class="profile" height="500px" width="500px" alt="Programming illustration">
         </div>
     </header>
 
 
-    <section id="one">
+    <section id="services">
 
         <h2 class="offer">My Offered Services</h2>
 
         <p class="s-text">Web developers: Crafting digital landscapes, one line of code at a time, to bring your online vision to life.</p>
 
-        
 
-        <div id="services">
+
+        <div id="services-grid">
             <div class="s1">
                 <i class="fa-regular fa-pen-to-square fa-2xl" style="color: #ff8e24;"></i>
                 <p>Web Design</p>
-    
+
                 <p class="w-text">" A designer knows he has achieved perfection not when there is nothing <br>left to add, but when there is nothing left to take away. "</p>
             </div>
 
@@ -96,7 +114,7 @@
 
                 <p class="w-text">" Experience a design revolution elevating web aesthetics. Watch as your websites evolve into captivating, engaging visual experiences that leave a lasting impression. "</p>
             </div>
-            
+
             <div class="s6">
                 <i class="fa-brands fa-bootstrap fa-2xl" style="color: #563d7c;"></i>
                 <p>BOOTSTRAP</p>
@@ -130,10 +148,103 @@
 
     <section id="projects">
         <h2 class="offer">Projects</h2>
+
+        <p class="s-text">A few things I have designed and built. The full collection lives on <a class="inline-link" href="https://github.com/Whis360" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+
+        <div id="projects-grid">
+
+            <article class="project-card">
+                <a href="https://github.com/Whis360/invoicelite" target="_blank" rel="noopener noreferrer" class="project-media">
+                    <img src="img/projects/invoicelite.png" alt="InvoiceLite dashboard showing an invoice" loading="lazy" decoding="async" width="1280" height="800">
+                </a>
+                <div class="project-body">
+                    <h3>InvoiceLite</h3>
+                    <p>Invoicing and receipt generation for freelancers and small businesses — create clients, build invoices and export PDFs. Built with Node.js, Express, SQLite and PDFKit.</p>
+                    <div class="project-tags">
+                        <span>Node.js</span><span>Express</span><span>SQLite</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Whis360/invoicelite" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <a href="https://github.com/Whis360/Meta" target="_blank" rel="noopener noreferrer" class="project-media">
+                    <img src="img/projects/meta-login.jpg" alt="Meta login page user interface" loading="lazy" decoding="async" width="1280" height="800">
+                </a>
+                <div class="project-body">
+                    <h3>Meta — Login Page</h3>
+                    <p>A clean, responsive login page with a focus on user interface detail — layout, spacing and form styling built from scratch with HTML and CSS.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>UI Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Whis360/Meta" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <a href="https://github.com/Whis360/Portfolio" target="_blank" rel="noopener noreferrer" class="project-media">
+                    <img src="img/projects/portfolio.png" alt="This portfolio website" loading="lazy" decoding="async" width="1280" height="800">
+                </a>
+                <div class="project-body">
+                    <h3>This Portfolio</h3>
+                    <p>The site you are looking at — a hand-coded, responsive single page built with semantic HTML, modern CSS (grid, flexbox, clamp) and a sprinkle of vanilla JavaScript.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Whis360/Portfolio" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
     </section>
-    
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <section id="contact">
+        <h2 class="offer">Get In Touch</h2>
+
+        <p class="s-text">Have a project in mind, or just want to say hello? My inbox is always open.</p>
+
+        <div id="contact-grid">
+
+            <!-- TODO: replace you@example.com with your real email address (it appears in 2 places: the href and the text) -->
+            <a class="contact-card" href="mailto:you@example.com">
+                <i class="fa-solid fa-envelope fa-xl" style="color: #800080;"></i>
+                <div>
+                    <p class="contact-label">Email</p>
+                    <p class="contact-value">you@example.com</p>
+                </div>
+            </a>
+
+            <a class="contact-card" href="https://github.com/Whis360" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github fa-xl" style="color: #1a1a1a;"></i>
+                <div>
+                    <p class="contact-label">GitHub</p>
+                    <p class="contact-value">github.com/Whis360</p>
+                </div>
+            </a>
+
+        </div>
+
+        <div id="contact-cta">
+            <a class="n2" href="mailto:you@example.com">SAY HELLO</a>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer-inner">
+            <p>© <span id="year">2026</span> Wisdom Nwaka</p>
+            <div id="footer-social">
+                <a href="https://github.com/Whis360" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <p id="footer-note">Designed &amp; built by hand with HTML, CSS and JavaScript.</p>
+    </footer>
+
     <script src="js/main.js"></script>
 
 </body>
